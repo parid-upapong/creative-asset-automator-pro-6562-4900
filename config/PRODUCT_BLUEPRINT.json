@@ -1,0 +1,40 @@
+{
+  "project_name": "Overlord Micro-SaaS",
+  "version": "1.0.0",
+  "architecture": {
+    "engine": "AI-Driven Automation Wrapper",
+    "stack": "Next.js, FastAPI, PostgreSQL, Redis",
+    "ai_models": {
+      "vision": "GPT-4o / Claude 3.5 Sonnet",
+      "video_processing": "FFmpeg + Whisper v3",
+      "image_generation": "Stable Diffusion XL / Midjourney API"
+    }
+  },
+  "modules": [
+    {
+      "id": "ingestion_engine",
+      "function": "Multi-source asset upload (Local, S3, YouTube Link)",
+      "status": "Priority High"
+    },
+    {
+      "id": "brand_dna_vault",
+      "function": "Vector DB storing user voice, style guides, and past successful content",
+      "status": "Core"
+    },
+    {
+      "id": "repurposing_matrix",
+      "function": "Logic for splitting long-form into short-form derivatives",
+      "status": "Priority High"
+    },
+    {
+      "id": "distro_hub",
+      "function": "OAuth2 integrations with major social platforms",
+      "status": "Standard"
+    }
+  ],
+  "roadmap": {
+    "q1_foundation": "MVP with Video-to-Shorts and Brand Voice learning",
+    "q2_expansion": "Multi-language support and AI-generated social assets (Banners/Thumnails)",
+    "q3_intelligence": "Predictive analytics on which clips will perform best"
+  }
+}
