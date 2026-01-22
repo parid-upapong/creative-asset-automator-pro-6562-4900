@@ -1,0 +1,27 @@
+graph TD
+    %% Core Workflow Diagram
+    subgraph "Master Asset Lifecycle"
+        A[Upload / URL Ingestion] --> B{AI Engine Analysis}
+        B --> C[Transcription & Semantic Indexing]
+        B --> D[Visual Moment Detection]
+        
+        C & D --> E[Asset Vault / Library]
+        
+        E --> F[User Review: Select Clips]
+        
+        F --> G[Apply Brand Kit / Template]
+        G --> H[Final Rendering]
+        
+        H --> I[Direct Social Publishing]
+        H --> J[Manual Download]
+        
+        I --> K[Performance Analytics]
+        K -->|Feedback Loop| B
+    end
+
+    subgraph "Asset Management Journey"
+        Raw[Raw Video] -->|Enrich| Smart[Smart Master + Metadata]
+        Smart -->|Transform| Clips[Clips / Shorts]
+        Smart -->|Extract| Text[Articles / Tweets]
+        Clips & Text -->|Brandify| Finished[Published Content]
+    end
