@@ -1,0 +1,11 @@
+{
+  "trace_id": "uuid-v4",
+  "agent_source": "The Curator",
+  "agent_target": "The Ghostwriter",
+  "payload": {
+    "segment_id": "seg_001",
+    "transcript_chunk": "...",
+    "suggested_format": "LinkedIn"
+  },
+  "context": { "brand_voice": "Professional yet Witty" }
+}
