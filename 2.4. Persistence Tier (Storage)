@@ -1,0 +1,18 @@
+[User Browser] 
+      |
+      ▼
+[Vercel / Next.js] <-----> [PostgreSQL]
+      |
+      ▼ (JSON/REST)
+[FastAPI Gateway] <-----> [Redis Cache]
+      |
+      | (Push Task)
+      ▼
+[Message Queue (SQS/Redis)]
+      |
+      | (Poll Task)
+      ▼
+[AI Worker Node (GPU/CPU)] <---> [S3 Bucket (Storage)]
+      |                     <---> [AI APIs (OpenAI/Anthropic)]
+      ▼
+[Webhooks/WebSockets] ----> Notify User "Processing Complete"
